@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог мороженого</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Glassy Shop</a>
+			<ul>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="blank.html">Доставка и оплата</a></li>
+				<li><a href="blank.html">О компании</a></li>
+			</ul>
+			<!--Тут будет корзина-->
+		</nav>
+		<section>
+			<h2>График работы и контакты</h2>
+			<p>с 10 до 20, ежедневно</p>
+			<a href="tel:88124502525">8 812 450-25-25</a>
+		</section>
+	</header>
+
+	<main>
+		<h1>Сливочное мороженое</h1>
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li>Сливочное</li>
+		</ul>
+
+		<sectiom>
+			<h2>Фильтр</h2>
+			<form method="get" action="blank.html">
+				<fieldset>
+					<legend>Сортировка</legend>
+					<datalist id="sorting">
+						<span class="Label">Сортировка:</span>
+						<select id="option">
+							<option label="По популярности" value="Popularity">
+							<option label="Сначала недорогие" value="Inexpensive first">
+							<option label="Сначала дорогие" value="Dear ones first">
+							<option label="По жирности" value="By fat content">
+						</select>
+					</datalist>
+					<input id="sorting-option" list="sorting">
+				</fieldset>
+				<fieldset>
+					<legend>Цена</legend>
+						<div class="price-controls">
+							от <input class="min-price" type="text" value="100">
+							до <input class="max-price" type="text" value="5000">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Жирность</legend>
+					<ul>
+						<li>
+							<input type="radio" name="fat-content" value="0%" id="filter-0%">
+							<label for="filter-0%">0%</label>
+						</li>
+						<li>
+							<input type="radio" name="fat-content" value="to-10%" id="filter-to-10%"  checked>
+							<label for="filter-10%">до 10%</label>
+						</li>
+						<li>
+							<input type="radio" name="fat-content" value="to-30%" id="filter-to-30%">
+							<label for="filter-30%">до 30%</label>
+						</li>
+						<li>
+							<input type="radio" name="fat-content" value="above-30%" id="filter-above-30%">
+							<label for="filter-above-30%">свыше 30%</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Наполнители</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="chocolate" id="filter-chocolate%" checked>
+							<label for="filter-chocolate">шоколадные</label>
+						</li>
+						<li>
+							<input type="checkbox" name="sugar powders" id="filter-sugar-powders">
+							<label for="filter-sugar-powders">сахарные присыпки</label>
+						</li>
+						<li>
+							<input type="checkbox" name="fruit" id="filter-fruit" 
+							<label for="filter-fruit">фрукты</label>
+						</li>
+						<li>
+							<input type="checkbox" name="syrups" id="filter-syrups">
+							<label for="filter-syrups">сиропы</label>
+						</li>
+						<li>
+							<input type="checkbox" name="jams" id="filter-jams">
+							<label for="filter-jams">джемы</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Применить</button>
+			</form>
+		</sectiom>
+
+		<sectiom>
+			<h2>Список мороженого</h2>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с апельсиновым  джемом и цитрусовой стружкой</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/index/hit_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым  джемом и цитрусовой стружкой">
+				</a>
+				<p>310 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочно-кофейное с кусочками шоколада</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/index/hit_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+				</a>
+				<p>380 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/index/hit_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+				</a>
+				<p>355 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное крем-брюле c карамельной подливкой</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/index/hit_4.jpg" width="267" height="267" alt="Сливочное крем-брюле c карамельной подливкой">
+				</a>
+				<p>415 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с брусничным джемом</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_1.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+				</a>
+				<p>325 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочно-черничное с цельными ягодами черники</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_2.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+				</a>
+				<p>410 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочно-лимонное с карамельной присыпкой</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_3.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+				</a>
+				<p>315 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с шоколадной стружкой</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_4.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+				</a>
+				<p>320 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочно-ванильное с кусочками шоколада</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_5.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+				</a>
+				<p>440 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с ментоловым сиропом</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_6.jpg.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+				</a>
+				<p>435 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с кусочками черного шоколада</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_7.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+				</a>
+				<p>355 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<article>
+				<a href="blank.html"></a>
+					<h3>Сливочное с мятным сиропом</h3>
+					<img src="/Users/anastasia/Documents/Project/catalog/img/catalog/product_8.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+				</a>
+				<p>420 ₽/кг</p>
+				<button type="button">Быстрый просмотр</button>
+			</article>
+			<ul>
+				<li><a>1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&gt</a></li>
+			</ul>
+		</sectiom>
+	</main>
+
+	<footer>
+		<section>
+			<h2>Социальные сети</h2>
+			<nav>
+				<li><a href="#">Инстаграм</a></li>
+				<li><a href="#">LinkedIn</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Youtube</a></li>
+			</nav>
+		</section>
+		<section>
+			<h2>Полезная информация</h2>
+				<nav>
+					<li><a href="blank.html">Для поставщиков</a></li>
+					<li><a href="blank.html">О производстве</a></li>
+					<li><a href="blank.html">Наши документы</a></li>
+					<li><a href="blank.html">Экологисечкие стандарты</a></li>
+				</nav>
+		</section>
+		<section>
+			<h2>Разработано</h2>
+			<p>Жевага Анастасия</p>
+		</section>
+	</footer>
+
+	<form action="catalog.html"> 
+		<input type="text" name="text" placeholder="Крем-брюле">
+	</form>
+	<p>
+			<form action="blank.html" metod="post">
+			<label for="login-login">Логин</label>
+			<input id="login-login" type="email" name="login" placeholder="email@example.com">
+	</p>
+	<p>
+		<label for="login-password">Пароль</label>
+		<input id="login-password" type="password" name="password" placeholder="********">
+	</p>
+	<p>
+		<label>
+			<input type="checkbox" name="remember">
+			Запомнить логин и пароль
+		</label>
+	</p>
+	<p>
+		<a href="blank.html">Забыли пароль?</a>
+	</p>
+	<p>
+		<a href="blank.html">Новая регистрация</a>
+	</p>
+		<button type="submit">Войти</button>
+	</form>
+</body>
+</html>
