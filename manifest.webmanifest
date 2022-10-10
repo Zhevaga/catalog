@@ -1,6 +1,6 @@
 {
 	"icons": [
-		{"src":"/Users/anastasia/Documents/Project/catalog/img/favicon/192.png", "type":"image/png", "sizes":"192x192"}
-		{"src":"/Users/anastasia/Documents/Project/catalog/img/favicon/512.png", "type":"image/png", "sizes":"512x512"}
+		{"src":"/Users/anastasia/Documents/catalog/img/favicon/192.png", "type":"image/png", "sizes":"192x192"}
+		{"src":"/Users/anastasia/Documents/catalog/img/favicon/512.png", "type":"image/png", "sizes":"512x512"}
 	]
 }
